@@ -24,7 +24,7 @@ result1 = classification_report(y_test, y_pred)
 print("Classification Report:",)
 print (result1)
 from sklearn import metrics
-predicted = classifier.predict(x_test,average="None")
+predicted = classifier.predict(x_test)
 accuracy_score = metrics.accuracy_score(predicted, y_test)
 
 print("Accuracy:",accuracy_score)
